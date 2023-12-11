@@ -41,6 +41,7 @@ class ToyotaConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                 client = MyT(
                     username=user_input[CONF_EMAIL],
                     password=user_input[CONF_PASSWORD],
+                    brand="lexus",
                     disable_locale_check=True,
                 )
 

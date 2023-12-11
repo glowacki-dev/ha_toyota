@@ -65,6 +65,7 @@ async def async_setup_entry(  # pylint: disable=too-many-statements
     client = MyT(
         username=email,
         password=password,
+        brand="lexus",
         disable_locale_check=True,
     )
 
